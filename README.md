@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=green" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -58,48 +58,48 @@ The table below outlines leading commercial SaaS decision automation platforms, 
 
 The open-source BRMS ecosystem provides high-performance decision engines, visual rule graph builders, Excel-based authoring tools, and cross-platform embedded execution runtimes.
 
-Below are top open-source projects sorted by **GitHub Stars (Descending)**:
+Below are top open-source projects sorted by **GitHub_Stars (Descending)**:
 
-1. **[Rete.js](https://github.com/retejs/rete)** [![GitHub stars](https://img.shields.io/github/stars/retejs/rete?style=social&color=white)](https://github.com/retejs/rete/stargazers)  
+1. **[Rete.js](https://github.com/retejs/rete)** [![GitHub_Stars](https://img.shields.io/github/stars/retejs/rete?style=social&color=white)](https://github.com/retejs/rete/stargazers)  
    ⚡ *Modular framework for visual programming, node-based decision graphs, and interactive rule editing in JavaScript/TypeScript.*
 
-2. **[Drools](https://github.com/apache/incubator-kie-drools)** [![GitHub stars](https://img.shields.io/github/stars/apache/incubator-kie-drools?style=social&color=white)](https://github.com/apache/incubator-kie-drools/stargazers)  
+2. **[Drools](https://github.com/apache/incubator-kie-drools)** [![GitHub_Stars](https://img.shields.io/github/stars/apache/incubator-kie-drools?style=social&color=white)](https://github.com/apache/incubator-kie-drools/stargazers)  
    ☕ *The most mature enterprise open-source BRMS (Apache Incubator KIE). Forward and backward chaining inference engine powered by the enhanced Rete algorithm with DMN 1.5 compliance.*
 
-3. **[Easy Rules](https://github.com/j-easy/easy-rules)** [![GitHub stars](https://img.shields.io/github/stars/j-easy/easy-rules?style=social&color=white)](https://github.com/j-easy/easy-rules/stargazers)  
+3. **[Easy Rules](https://github.com/j-easy/easy-rules)** [![GitHub_Stars](https://img.shields.io/github/stars/j-easy/easy-rules?style=social&color=white)](https://github.com/j-easy/easy-rules/stargazers)  
    🍃 *Lightweight, POJO-based rules engine for Java applications featuring annotation-based rule definitions and expression language support (MVEL & SpEL).*
 
-4. **[Microsoft RulesEngine](https://github.com/microsoft/RulesEngine)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/RulesEngine?style=social&color=white)](https://github.com/microsoft/RulesEngine/stargazers)  
+4. **[Microsoft RulesEngine](https://github.com/microsoft/RulesEngine)** [![GitHub_Stars](https://img.shields.io/github/stars/microsoft/RulesEngine?style=social&color=white)](https://github.com/microsoft/RulesEngine/stargazers)  
    🔷 *Abstracted business rules engine for .NET applications allowing rules to be defined in JSON/lambdas and evaluated dynamically with high performance.*
 
-5. **[RuleGo](https://github.com/rulego/rulego)** [![GitHub stars](https://img.shields.io/github/stars/rulego/rulego?style=social&color=white)](https://github.com/rulego/rulego/stargazers)  
+5. **[RuleGo](https://github.com/rulego/rulego)** [![GitHub_Stars](https://img.shields.io/github/stars/rulego/rulego?style=social&color=white)](https://github.com/rulego/rulego/stargazers)  
    🐹 *Lightweight, high-performance, embedded component orchestration and rule engine written in Go for IoT, enterprise business automation, and edge computing.*
 
-6. **[Cerbos](https://github.com/cerbos/cerbos)** [![GitHub stars](https://img.shields.io/github/stars/cerbos/cerbos?style=social&color=white)](https://github.com/cerbos/cerbos/stargazers)  
+6. **[Cerbos](https://github.com/cerbos/cerbos)** [![GitHub_Stars](https://img.shields.io/github/stars/cerbos/cerbos?style=social&color=white)](https://github.com/cerbos/cerbos/stargazers)  
    🛡️ *Open-source, context-aware policy and authorization decision engine for writing decoupled business access control rules in YAML/WASM.*
 
-7. **[json-rules-engine](https://github.com/CacheControl/json-rules-engine)** [![GitHub stars](https://img.shields.io/github/stars/CacheControl/json-rules-engine?style=social&color=white)](https://github.com/CacheControl/json-rules-engine/stargazers)  
+7. **[json-rules-engine](https://github.com/CacheControl/json-rules-engine)** [![GitHub_Stars](https://img.shields.io/github/stars/CacheControl/json-rules-engine?style=social&color=white)](https://github.com/CacheControl/json-rules-engine/stargazers)  
    🟨 *Forward-chaining rules engine built for Node.js and browser JS/TS. Rules defined as JSON schemas with customizable facts and async condition handlers.*
 
-8. **[ZEN Engine (GoRules)](https://github.com/gorules/zen)** [![GitHub stars](https://img.shields.io/github/stars/gorules/zen?style=social&color=white)](https://github.com/gorules/zen/stargazers)  
+8. **[ZEN Engine (GoRules)](https://github.com/gorules/zen)** [![GitHub_Stars](https://img.shields.io/github/stars/gorules/zen?style=social&color=white)](https://github.com/gorules/zen/stargazers)  
    🦀 *Cross-platform Business Rules Engine written in Rust with native bindings for Node.js, Python, Go, Java, C#, Kotlin, and Swift. Evaluates JDM JSON decision models in microseconds.*
 
-9. **[NRules](https://github.com/NRules/NRules)** [![GitHub stars](https://img.shields.io/github/stars/NRules/NRules?style=social&color=white)](https://github.com/NRules/NRules/stargazers)  
+9. **[NRules](https://github.com/NRules/NRules)** [![GitHub_Stars](https://img.shields.io/github/stars/NRules/NRules?style=social&color=white)](https://github.com/NRules/NRules/stargazers)  
    ⚙️ *Production-proven forward-chaining rules engine for .NET based on the Rete matching algorithm using internal DSL or fluent API.*
 
-10. **[Node-rules](https://github.com/mithunsatheesh/node-rules)** [![GitHub stars](https://img.shields.io/github/stars/mithunsatheesh/node-rules?style=social&color=white)](https://github.com/mithunsatheesh/node-rules/stargazers)  
+10. **[Node-rules](https://github.com/mithunsatheesh/node-rules)** [![GitHub_Stars](https://img.shields.io/github/stars/mithunsatheesh/node-rules?style=social&color=white)](https://github.com/mithunsatheesh/node-rules/stargazers)  
     📦 *Lightweight forward-chaining rule engine written in JavaScript for Node.js applications to evaluate dynamic rules and triggers.*
 
-11. **[OpenL Tablets](https://github.com/openl-tablets/openl-tablets)** [![GitHub stars](https://img.shields.io/github/stars/openl-tablets/openl-tablets?style=social&color=white)](https://github.com/openl-tablets/openl-tablets/stargazers)  
+11. **[OpenL Tablets](https://github.com/openl-tablets/openl-tablets)** [![GitHub_Stars](https://img.shields.io/github/stars/openl-tablets/openl-tablets?style=social&color=white)](https://github.com/openl-tablets/openl-tablets/stargazers)  
     📊 *Open-source BRMS allowing business analysts to author decision logic using Excel spreadsheets, compiling rules into high-speed RESTful API bytecode.*
 
-12. **[Ordo](https://github.com/Pama-Lee/Ordo)** [![GitHub stars](https://img.shields.io/github/stars/Pama-Lee/Ordo?style=social&color=white)](https://github.com/Pama-Lee/Ordo/stargazers)  
+12. **[Ordo](https://github.com/Pama-Lee/Ordo)** [![GitHub_Stars](https://img.shields.io/github/stars/Pama-Lee/Ordo?style=social&color=white)](https://github.com/Pama-Lee/Ordo/stargazers)  
     🚀 *Rust-based decision platform featuring sub-microsecond JIT compilation (Cranelift), visual decision flows, decision table authoring, and WASM runtime.*
 
-13. **[ZEN Engine (phenixrizen fork)](https://github.com/phenixrizen/zen)** [![GitHub stars](https://img.shields.io/github/stars/phenixrizen/zen?style=social&color=white)](https://github.com/phenixrizen/zen/stargazers)  
+13. **[ZEN Engine (phenixrizen fork)](https://github.com/phenixrizen/zen)** [![GitHub_Stars](https://img.shields.io/github/stars/phenixrizen/zen?style=social&color=white)](https://github.com/phenixrizen/zen/stargazers)  
     🔧 *Community-driven fork of `gorules/zen` adding embedded SQLite lookup nodes (`databaseNode`), `$params` support, and enhanced timezone handling.*
 
-14. **[NxBRE](https://github.com/ddossot/NxBRE)** [![GitHub stars](https://img.shields.io/github/stars/ddossot/NxBRE?style=social&color=white)](https://github.com/ddossot/NxBRE/stargazers)  
+14. **[NxBRE](https://github.com/ddossot/NxBRE)** [![GitHub_Stars](https://img.shields.io/github/stars/ddossot/NxBRE?style=social&color=white)](https://github.com/ddossot/NxBRE/stargazers)  
     💼 *.NET rule-based engine providing forward-chaining inference and XML-driven flow control engines supporting RuleML standards.*
 
 ---
