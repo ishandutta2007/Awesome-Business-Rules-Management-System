@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1035"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="node-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+
+    <linearGradient id="node-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+
+    <linearGradient id="node-grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-primary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glow-soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+      }
+      @keyframes pulse-glow {
+        0%, 100% { opacity: 0.4; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.08); }
+      }
+      @keyframes dash-flow {
+        0% { stroke-dashoffset: 60; }
+        100% { stroke-dashoffset: 0; }
+      }
+      @keyframes node-pulse {
+        0%, 100% { r: 6px; opacity: 0.8; }
+        50% { r: 9px; opacity: 1; filter: drop-shadow(0 0 6px #a855f7); }
+      }
+      @keyframes text-shimmer {
+        0%, 100% { stop-color: #6366f1; }
+        50% { stop-color: #ec4899; }
+      }
+
+      .bg-grid { opacity: 0.07; }
+      .animated-float { animation: float 6s ease-in-out infinite; }
+      .animated-float-delayed { animation: float 7s ease-in-out 2s infinite; }
+      .animated-pulse { animation: pulse-glow 4s ease-in-out infinite; }
+      .flow-line { stroke-dasharray: 8, 8; animation: dash-flow 3s linear infinite; }
+      .pulse-node { animation: node-pulse 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="url(#bg-grad)" rx="16"/>
+
+  <!-- Background Grid Pattern -->
+  <g class="bg-grid">
+    <path d="M0 40H1200 M0 80H1200 M0 120H1200 M0 160H1200 M0 200H1200 M0 240H1200 M0 280H1200 M0 320H1200" stroke="#ffffff" stroke-width="1"/>
+    <path d="M40 0V340 M120 0V340 M200 0V340 M280 0V340 M360 0V340 M440 0V340 M520 0V340 M600 0V340 M680 0V340 M760 0V340 M840 0V340 M920 0V340 M1000 0V340 M1080 0V340 M1160 0V340" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Glowing Background Orbs (Dynamic Accent) -->
+  <circle cx="200" cy="80" r="140" fill="#6366f1" opacity="0.15" filter="url(#glow-soft)" class="animated-pulse"/>
+  <circle cx="1000" cy="260" r="160" fill="#a855f7" opacity="0.12" filter="url(#glow-soft)" class="animated-pulse" style="animation-delay: 2s;"/>
+  <circle cx="850" cy="70" r="100" fill="#ec4899" opacity="0.1" filter="url(#glow-soft)" class="animated-pulse" style="animation-delay: 1s;"/>
+
+  <!-- Dynamic Decision Tree & Rule Flow (Right Side Decorative Graphics) -->
+  <g opacity="0.75" class="animated-float">
+    <!-- Decision Flow Lines -->
+    <path d="M820 170 L910 110 L1020 110" stroke="#6366f1" stroke-width="2" stroke-linecap="round" class="flow-line"/>
+    <path d="M820 170 L910 230 L1020 230" stroke="#a855f7" stroke-width="2" stroke-linecap="round" class="flow-line"/>
+    <path d="M910 110 L980 60" stroke="#10b981" stroke-width="2" stroke-linecap="round" class="flow-line"/>
+
+    <!-- Rule Nodes -->
+    <rect x="760" y="145" width="120" height="50" rx="10" fill="url(#node-grad1)" filter="url(#glow-primary)" opacity="0.9"/>
+    <text x="820" y="175" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">IF Rule_Match</text>
+
+    <rect x="910" y="85" width="120" height="50" rx="10" fill="url(#node-grad2)" opacity="0.9"/>
+    <text x="970" y="115" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">THEN Execute</text>
+
+    <rect x="910" y="205" width="120" height="50" rx="10" fill="url(#node-grad3)" opacity="0.9"/>
+    <text x="970" y="235" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle">ELSE Escalate</text>
+
+    <!-- Node Pulsing Dots -->
+    <circle cx="820" cy="170" r="7" fill="#60a5fa" class="pulse-node"/>
+    <circle cx="910" cy="110" r="7" fill="#34d399" class="pulse-node" style="animation-delay: 1s;"/>
+    <circle cx="910" cy="230" r="7" fill="#fbbf24" class="pulse-node" style="animation-delay: 2s;"/>
+  </g>
+
+  <!-- Left Side Floating Tech Pills (Decorative Background Layer) -->
+  <g opacity="0.65" class="animated-float-delayed">
+    <rect x="60" y="55" width="100" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="110" y="73" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">⚡ DMN 1.5</text>
+
+    <rect x="180" y="45" width="110" height="28" rx="14" fill="#1e293b" stroke="#a855f7" stroke-width="1"/>
+    <text x="235" y="63" fill="#c084fc" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">🧩 Rule Tables</text>
+
+    <rect x="60" y="265" width="120" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="1"/>
+    <text x="120" y="283" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">🚀 Sub-ms Logic</text>
+
+    <rect x="200" y="275" width="130" height="28" rx="14" fill="#1e293b" stroke="#fb7185" stroke-width="1"/>
+    <text x="265" y="293" fill="#fb7185" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">⚙️ Decision Engine</text>
+  </g>
+
+  <!-- Main Foreground Content (Title & Subtitle Always On Top) -->
+  <!-- Header Tag / Category Pill -->
+  <g>
+    <rect x="60" y="105" width="220" height="26" rx="13" fill="url(#primary-grad)" opacity="0.9"/>
+    <text x="170" y="122" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" letter-spacing="1.5" text-anchor="middle">DECISION AUTOMATION</text>
+  </g>
+
+  <!-- Title -->
+  <text x="60" y="175" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="900" letter-spacing="-0.5">
+    Awesome Business Rules
+  </text>
+  <text x="60" y="215" fill="url(#primary-grad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="-0.5" filter="url(#glow-primary)">
+    Management Systems (BRMS)
+  </text>
+
+  <!-- Subtitle -->
+  <text x="60" y="248" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" letter-spacing="0.2">
+    Curated Enterprise SaaS Platforms, High-Performance Engines &amp; Open-Source Tools
+  </text>
+
+  <!-- Outer Border -->
+  <rect x="1" y="1" width="1198" height="338" rx="15" fill="none" stroke="#334155" stroke-width="2" opacity="0.6"/>
+</svg>
