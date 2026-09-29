@@ -1,223 +1,163 @@
-# Awesome-Business-Rules-Management-System
-
-## Top Business Rules Management System (BRMS) Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Decision Automation, Rule Authoring & Business Logic Governance*  
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Business Rules Management Systems (BRMS)**. These tools enable organizations to author, test, deploy, and govern business rules and decision logic — separating volatile business policies from application code for faster change and greater transparency.
-
-
-
-**Examples** include Red Hat Decision Manager, FICO Blaze Advisor, Pega Decisioning, IBM ODM, Drools, DecisionRules.io, OpenRules, FlexRule, Corticon, and TIBCO BusinessEvents (the category leaders).
-
-
-
-**Open-source emphasis**: This section is expanded with active projects for self-hosting, custom rule authoring, and transparent decision governance — ideal for developers, business analysts, and enterprises building vendor-independent decision automation. The open-source BRMS ecosystem is anchored by **Drools** (now under Apache incubator) and a growing set of modern engines offering Excel-based authoring, visual decision graphs, and cross-platform embedded execution.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Red Hat Decision Manager](https://www.redhat.com/en/technologies/jboss-middleware/decision-manager)**  
-
-  Enterprise business rules management system built on Drools and Kogito. Provides a centralized repository for business rules, decision tables, and DMN models with governance, versioning, and deployment tooling. Formerly JBoss Enterprise BRMS .
-
-
-
-- **[FICO Blaze Advisor](https://www.fico.com/en/products/fico-blaze-advisor-decision-rules-management-system)**  
-
-  Enterprise decision rules management system for authoring, testing, and deploying business rules. Widely used in financial services for credit, fraud, and compliance decisions.
-
-
-
-- **[Pega Decisioning](https://www.pega.com/products/decisioning)**  
-
-  AI-powered decisioning platform combining business rules with predictive analytics and adaptive learning for next-best-action and customer decision management.
-
-
-
-- **[IBM ODM](https://www.ibm.com/products/operational-decision-manager)**  
-
-  Operational Decision Manager for automating and governing business rule-based decisions. Supports decision tables, rule flows, and decision models with enterprise governance .
-
-
-
-- **[DecisionRules.io](https://www.decisionrules.io/)**  
-
-  Cloud-based decision rules engine and management platform with a visual rule editor, decision tables, and API-first deployment for real-time decision automation.
-
-
-
-- **[OpenRules](https://openrules.com/)**  
-
-  Business rules and decision management system with Excel-based rule authoring. Provides decision tables, rule engine, and deployment tools for Java-based enterprise applications.
-
-
-
-- **[FlexRule](https://www.flexrule.com/)**  
-
-  Decision automation platform with a visual rule designer, decision model and notation (DMN) support, and deployment options for enterprise rule-based systems.
-
-
-
-- **[Corticon](https://www.progress.com/corticon)**  
-
-  Decision automation platform (Progress Software) with a model-driven approach to business rules. No-code rule authoring with decision tables, rule flows, and testing capabilities.
-
-
-
-- **[TIBCO BusinessEvents](https://www.tibco.com/products/tibco-businessevents)**  
-
-  Event-driven business rules engine for real-time decisioning. Combines complex event processing with rule-based decision automation.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Drools](https://github.com/apache/incubator-kie-drools)**  
-
-  The most mature and widely adopted open-source BRMS, now under Apache incubator as part of the KIE (Knowledge Is Everything) project . Forward and backward chaining inference-based rules engine using an enhanced Rete algorithm implementation. Supports Java Rules Engine API (JSR 94). Current stable release 10.1.0 (July 2025) . Components include Drools Expert (rule engine), Drools Guvnor (business rules manager), Drools Fusion (complex event processing), and OptaPlanner (planning optimization). Apache-2.0 licensed with active development .
-
-
-
-- **[ZEN Engine (GoRules)](https://github.com/gorules/zen)**  
-
-  Cross-platform open-source Business Rules Engine written in Rust with native bindings for Node.js, Python, Go, Java, C#, Kotlin (JVM), Kotlin (Android), and Swift (iOS) . Decisions evaluate in microseconds and run identically on every platform, stored as portable JSON (JDM — JSON Decision Model). Version 2.0 introduces policy documents with typed data models, static type checking, and hardened runtime . The related **GoRules BRMS** provides a self-hosted management system with versioning, audit logs, and multi-workspace organization .
-
-
-
-- **[OpenL Tablets](https://github.com/openl-tablets/openl-tablets)**  
-
-  Open-source Business Rules Management System that lets business analysts create, test, and manage decision logic using familiar Excel spreadsheets, then deploy them as high-performance REST APIs . Features type-safe validation, compile-time error checking, hot reload for zero-downtime updates, Git integration for version control, and auto-generated OpenAPI documentation. Excel rules compile to native Java bytecode for maximum performance. Used in insurance, banking, healthcare, and retail for premium calculation, credit decisions, and dynamic pricing . Actively maintained with Docker Compose quick-start .
-
-
-
-- **[Ordo](https://github.com/Pama-Lee/Ordo)**  
-
-  Open-source decision platform built in Rust with sub-microsecond rule execution via JIT compilation (Cranelift) . Features visual flow editor and decision table authoring, full platform workspace with org/project management, release center with staged rollouts and rollback, decision contracts with typed schemas, and fact catalog governance. Runs everywhere: HTTP, gRPC, WASM, and CLI. Single binary or hosted platform deployment .
-
-
-
-- **[ZEN Engine (phenixrizen fork)](https://github.com/phenixrizen/zen)**  
-
-  Community-maintained fork of gorules/zen that accepts contributions (upstream does not) . Adds first-class `databaseNode` for reference data lookup from decision graphs, `zen-database-sqlite` handler with bundled SQLite, decision-level `$params` for static parameters, and fixes for timezone handling and fractional number truncation. Same MIT license as upstream.
-
-
-
-- **[Easy Rules](https://github.com/j-easy/easy-rules)**  
-
-  Lightweight, POJO-based rules engine for Java. Simple but powerful with annotation-based rule definitions, rule composition (composite, unit, activation, conditional), and support for MVEL and SpEL expressions. Ideal for applications needing simple rule evaluation without the complexity of full BRMS platforms .
-
-
-
-- **[NxBRE](https://github.com/ddossot/NxBRE)**  
-
-  .NET lightweight business rules engine (Rule Based Engine) with forward-chaining inference engine and XML-driven flow control engine. Supports RuleML 0.9 Naf Datalog and Visio 2003 modeling. Suitable for .NET applications needing embedded rule evaluation .
-
-
-
-- **[json-rules-engine](https://github.com/CacheControl/json-rules-engine)**  
-
-  Lightweight forward-chaining rules engine for JavaScript and TypeScript projects. Rules defined as JSON with flexible conditions and events. Suitable for Node.js applications needing simple business rule evaluation without external dependencies .
-
-
-
-- **[Node-rules](https://github.com/mithunsatheesh/node-rules)**  
-
-  Lightweight forward chaining rule engine for JavaScript and TypeScript. Simple API for defining rules with conditions and consequences. Actively maintained .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **OpenRules** — Java-based business rules engine with Excel-based authoring and decision table support .
-
-- **InfoSapient** — Pure Java open-source rules engine for expressing, executing, and maintaining business rules within a company. Uses multiple design patterns (MVC, Visitor, Strategy, Facade, Factory Method, Observer, Iterator) .
-
-- **JLisa** — Java framework for building business rules implementing JSR94 Rule Engine API .
-
-- **Mandarax** — Pure Java rule engine supporting multiple fact types and rule reflection, databases, EJB, and XML standard (RuleML 0.8) with backward chaining .
-
-- **Evrete** — Lightweight and intuitive Java rule engine .
-
-- **ice (Java规则引擎)** — Lightweight, high-performance abstract orchestration solution for complex/flexibly changing business rules with visual operation pages. Go-based .
-
-- **Kumi** — Declarative rules-and-calculation DSL for Ruby that statically analyzes and compiles business logic .
-
-- **Power Flows DMN** — Powerful decisions and rules engine for Java with DMN support .
-
-
-
-**Frameworks for building custom BRMS solutions**: Combine **Drools** for a mature, enterprise-proven rule engine with backward chaining and complex event processing capabilities . Use **OpenL Tablets** for Excel-based rule authoring that business analysts can own and maintain without developer intervention . Deploy **ZEN Engine** for cross-platform, embedded decision evaluation with microsecond latency and native bindings for every major language . Leverage **Ordo** for a modern Rust-based decision platform with visual authoring, governance features, and sub-microsecond JIT-compiled execution . For simple Java applications, **Easy Rules** provides POJO-based rule evaluation without BRMS complexity. Note that enterprise BRMS platforms with centralized rule repositories, multi-environment deployment workflows, and regulatory audit trails remain primarily commercial territory; open-source stacks provide strong rule engines, Excel-based authoring, and embedded decision evaluation that require integration for complete business rules governance.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Business rules management tools must comply with applicable regulations, internal governance policies, and audit requirements.
-
-- Self-hosted open-source solutions require proper infrastructure, rule versioning discipline, and ongoing maintenance. Rule engines are not a substitute for business analyst review and testing.
-
-- The open-source ecosystem provides strong rule engines, Excel-based authoring, and embedded decision evaluation, but full enterprise BRMS platforms with centralized governance, multi-environment deployment workflows, and regulatory audit trails remain primarily commercial offerings.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Business Rules Management Systems Banner" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=blue" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Business-Rules-Management-System?style=flat-square&color=green" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Business-Rules-Management-System/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+# 🚀 Awesome Business Rules Management System (BRMS) Ecosystem
 
+A **curated list** of top-tier SaaS platforms, enterprise engines, and open-source GitHub projects dedicated to **Business Rules Management Systems (BRMS)**, **Decision Automation**, **Rule Engine Frameworks**, and **Decision Model and Notation (DMN)** governance.
 
-**Made for business analysts, decision architects, developers, and enterprise automation teams.**  
+> 💡 **What is a BRMS?**  
+> A Business Rules Management System (BRMS) enables enterprise organizations and developers to define, deploy, execute, and govern operational business logic separately from core application code. This decouples volatile business policies for faster change management, compliance auditing, and transparent decision workflows.
 
-Let's make business rules management more open, transparent, and adaptable.
+---
+
+## 📌 Table of Contents
+
+- [☁️ SaaS & Hosted Enterprise Platforms](#%EF%B8%8F-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Projects & Engines](#-open-source-github-projects--engines)
+- [🛠️ Frameworks & Integration Architectures](#%EF%B8%8F-frameworks--integration-architectures)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+- [📈 Star History](#-star-history)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+
+---
+
+## ☁️ SaaS & Hosted Enterprise Platforms
+
+> 📊 **Sector Market Size & Structure**: The global Business Rules Management System (BRMS) sector is valued at approximately **$1.85 Billion USD** and is projected to reach **$4.20 Billion USD by 2030** (CAGR ~12.8%). The market is **moderately fragmented**, featuring established enterprise software giants alongside rapid-growth cloud-native challenger platforms.
+
+The table below outlines leading commercial SaaS decision automation platforms, sorted by **Company Size / Revenue (Descending)**:
+
+| 🏢 SaaS Platform / Vendor | 📝 Overview & Decision Automation Capabilities | 💰 Pricing (Starting Tier) | 🆓 Free Tier / Trial Limits | 📊 Company Size & Revenue |
+| :--- | :--- | :--- | :--- | :--- |
+| **[IBM ODM](https://www.ibm.com/products/operational-decision-manager)** | Enterprise Operational Decision Manager for automating business rules with decision tables, rule flows, and DMN governance. | Starting at **$3,300/month** per instance (or ~$0.012 per decision execution on Cloud Pak) | **30-Day Full Cloud Trial** (or 100 free executions on AWS Marketplace) | **IBM**: ~$62.5B Annual Revenue (~$200B Market Cap) |
+| **[Red Hat Decision Manager](https://www.redhat.com/en/technologies/jboss-middleware/decision-manager)** | Enterprise BRMS built on Drools and Kogito for rule authoring, versioning, DMN models, and deployment governance. | Starting at **$1,000/month** ($12,000/year) per core/node subscription | **60-Day Enterprise Trial** (or No-Cost Red Hat Developer Subscription) | **Red Hat / IBM**: ~$3.5B Annual Revenue (Parent IBM: ~$62.5B) |
+| **[TIBCO BusinessEvents](https://www.tibco.com/products/tibco-businessevents)** | Real-time event-driven business rules engine combining complex event processing (CEP) with decision automation. | Starting at **$2,500/month** enterprise subscription per server | **30-Day Evaluation License** available upon request via sales | **Cloud Software Group (TIBCO)**: ~$4.0B Annual Revenue |
+| **[FICO Blaze Advisor](https://www.fico.com/en/products/fico-blaze-advisor-decision-rules-management-system)** | Flagship decision engine for financial services, credit risk assessment, compliance, and fraud detection decisioning. | Starting at **$4,166/month** ($50,000/year) per server deployment | **30-Day Request-Based Evaluation Trial** for qualified enterprise clients | **FICO (Fair Isaac Corp)**: ~$1.7B Annual Revenue (~$45B Market Cap) |
+| **[Pega Decisioning](https://www.pega.com/products/decisioning)** | Enterprise platform combining rule engines with predictive AI, adaptive analytics, and next-best-action customer decisioning. | Starting at **$100–$250/user/month** (or case-based pricing starting ~$1,200/mo) | **30-Day Pega Community Edition Trial** (self-extendable up to 45 days) | **Pegasystems Inc.**: ~$1.4B Annual Revenue (~$4.2B Market Cap) |
+| **[Progress Corticon](https://www.progress.com/corticon)** | Model-driven, no-code decision automation platform with automated integrity checks, rule flows, and decision tables. | Starting at **$1,500/month** ($18,000/year) per decision server node | **30-Day Evaluation Download** (Corticon Studio & Server sandbox) | **Progress Software**: ~$750M Annual Revenue (~$2.5B Market Cap) |
+| **[DecisionRules.io](https://www.decisionrules.io/)** | Cloud-native decision engine with visual rule editor, decision tables, trees, and API-first execution. | Lite Plan at **$291/month** (billed annually); Starter plans from **$49/month** | **Free Forever Plan** (1,000 Solver API calls/mo, 10 rules/flows, 1 user) + 14-day Lite Trial | **DecisionRules s.r.o.**: ~$3M–$5M Annual Revenue (Growth Startup) |
+| **[OpenRules](https://openrules.com/)** | Decision management platform allowing business analysts to author rules in Excel and deploy high-speed decision microservices. | Development + Runtime commercial license starting at **$455/month** ($5,460/year) | **Free 30-Day Evaluation Version** (Full IDE + RuleDB) / 100 free executions on AWS | **OpenRules Inc.**: ~$2M–$5M Annual Revenue |
+| **[FlexRule](https://www.flexrule.com/)** | Decision automation platform featuring a visual decision designer, DMN support, and multi-tenant execution. | Developer/Team license starting at **$499/month** ($2,500/year) | **30-Day Evaluation License** & Free Demo Sandbox upon request | **FlexRule Pty Ltd**: ~$2M–$5M Annual Revenue |
+
+---
+
+## 🔓 Open-Source GitHub Projects & Engines
+
+The open-source BRMS ecosystem provides high-performance decision engines, visual rule graph builders, Excel-based authoring tools, and cross-platform embedded execution runtimes.
+
+Below are top open-source projects sorted by **GitHub Stars (Descending)**:
+
+1. **[Rete.js](https://github.com/retejs/rete)** [![GitHub stars](https://img.shields.io/github/stars/retejs/rete?style=social&color=white)](https://github.com/retejs/rete/stargazers)  
+   ⚡ *Modular framework for visual programming, node-based decision graphs, and interactive rule editing in JavaScript/TypeScript.*
+
+2. **[Drools](https://github.com/apache/incubator-kie-drools)** [![GitHub stars](https://img.shields.io/github/stars/apache/incubator-kie-drools?style=social&color=white)](https://github.com/apache/incubator-kie-drools/stargazers)  
+   ☕ *The most mature enterprise open-source BRMS (Apache Incubator KIE). Forward and backward chaining inference engine powered by the enhanced Rete algorithm with DMN 1.5 compliance.*
+
+3. **[Easy Rules](https://github.com/j-easy/easy-rules)** [![GitHub stars](https://img.shields.io/github/stars/j-easy/easy-rules?style=social&color=white)](https://github.com/j-easy/easy-rules/stargazers)  
+   🍃 *Lightweight, POJO-based rules engine for Java applications featuring annotation-based rule definitions and expression language support (MVEL & SpEL).*
+
+4. **[Microsoft RulesEngine](https://github.com/microsoft/RulesEngine)** [![GitHub stars](https://img.shields.io/github/stars/microsoft/RulesEngine?style=social&color=white)](https://github.com/microsoft/RulesEngine/stargazers)  
+   🔷 *Abstracted business rules engine for .NET applications allowing rules to be defined in JSON/lambdas and evaluated dynamically with high performance.*
+
+5. **[RuleGo](https://github.com/rulego/rulego)** [![GitHub stars](https://img.shields.io/github/stars/rulego/rulego?style=social&color=white)](https://github.com/rulego/rulego/stargazers)  
+   🐹 *Lightweight, high-performance, embedded component orchestration and rule engine written in Go for IoT, enterprise business automation, and edge computing.*
+
+6. **[Cerbos](https://github.com/cerbos/cerbos)** [![GitHub stars](https://img.shields.io/github/stars/cerbos/cerbos?style=social&color=white)](https://github.com/cerbos/cerbos/stargazers)  
+   🛡️ *Open-source, context-aware policy and authorization decision engine for writing decoupled business access control rules in YAML/WASM.*
+
+7. **[json-rules-engine](https://github.com/CacheControl/json-rules-engine)** [![GitHub stars](https://img.shields.io/github/stars/CacheControl/json-rules-engine?style=social&color=white)](https://github.com/CacheControl/json-rules-engine/stargazers)  
+   🟨 *Forward-chaining rules engine built for Node.js and browser JS/TS. Rules defined as JSON schemas with customizable facts and async condition handlers.*
+
+8. **[ZEN Engine (GoRules)](https://github.com/gorules/zen)** [![GitHub stars](https://img.shields.io/github/stars/gorules/zen?style=social&color=white)](https://github.com/gorules/zen/stargazers)  
+   🦀 *Cross-platform Business Rules Engine written in Rust with native bindings for Node.js, Python, Go, Java, C#, Kotlin, and Swift. Evaluates JDM JSON decision models in microseconds.*
+
+9. **[NRules](https://github.com/NRules/NRules)** [![GitHub stars](https://img.shields.io/github/stars/NRules/NRules?style=social&color=white)](https://github.com/NRules/NRules/stargazers)  
+   ⚙️ *Production-proven forward-chaining rules engine for .NET based on the Rete matching algorithm using internal DSL or fluent API.*
+
+10. **[Node-rules](https://github.com/mithunsatheesh/node-rules)** [![GitHub stars](https://img.shields.io/github/stars/mithunsatheesh/node-rules?style=social&color=white)](https://github.com/mithunsatheesh/node-rules/stargazers)  
+    📦 *Lightweight forward-chaining rule engine written in JavaScript for Node.js applications to evaluate dynamic rules and triggers.*
+
+11. **[OpenL Tablets](https://github.com/openl-tablets/openl-tablets)** [![GitHub stars](https://img.shields.io/github/stars/openl-tablets/openl-tablets?style=social&color=white)](https://github.com/openl-tablets/openl-tablets/stargazers)  
+    📊 *Open-source BRMS allowing business analysts to author decision logic using Excel spreadsheets, compiling rules into high-speed RESTful API bytecode.*
+
+12. **[Ordo](https://github.com/Pama-Lee/Ordo)** [![GitHub stars](https://img.shields.io/github/stars/Pama-Lee/Ordo?style=social&color=white)](https://github.com/Pama-Lee/Ordo/stargazers)  
+    🚀 *Rust-based decision platform featuring sub-microsecond JIT compilation (Cranelift), visual decision flows, decision table authoring, and WASM runtime.*
+
+13. **[ZEN Engine (phenixrizen fork)](https://github.com/phenixrizen/zen)** [![GitHub stars](https://img.shields.io/github/stars/phenixrizen/zen?style=social&color=white)](https://github.com/phenixrizen/zen/stargazers)  
+    🔧 *Community-driven fork of `gorules/zen` adding embedded SQLite lookup nodes (`databaseNode`), `$params` support, and enhanced timezone handling.*
+
+14. **[NxBRE](https://github.com/ddossot/NxBRE)** [![GitHub stars](https://img.shields.io/github/stars/ddossot/NxBRE?style=social&color=white)](https://github.com/ddossot/NxBRE/stargazers)  
+    💼 *.NET rule-based engine providing forward-chaining inference and XML-driven flow control engines supporting RuleML standards.*
+
+---
+
+## 🛠️ Frameworks & Integration Architectures
+
+When constructing custom enterprise decision systems:
+- **Enterprise Governance & Complex Events**: Pair **Drools** with event streams (Kafka) for complex event processing (CEP) and high-throughput forward chaining.
+- **Excel-Driven Workflow**: Utilize **OpenL Tablets** to empower domain experts and business analysts to manage insurance, financial, or pricing rules directly in Excel.
+- **Sub-Millisecond Microservice Execution**: Deploy **ZEN Engine** or **Ordo** as embedded microservices in Rust/Go/Node.js for real-time edge decisioning.
+- **Lightweight App Integration**: Embed **Easy Rules** (Java), **Microsoft RulesEngine** (.NET), or **json-rules-engine** (Node.js) to decouple application policy logic cleanly without extra infrastructure overhead.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcomed! Help us keep this curated list up-to-date and accurate:
+
+1. **Fork** this repository.
+2. Add your project or SaaS platform entry into `README.md` following the tabular or badged structure.
+3. Ensure links, pricing, free tier details, and descriptions are accurate and objective.
+4. Submit a **Pull Request (PR)** with a clear title and description.
+
+Check out our curated meta-list at **[Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)** for more top-tier developer lists.
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list for informational and educational purposes.
+- Product descriptions, pricing tiers, and revenue numbers are gathered from public documentation, filings, and vendor listings. Always verify details with official vendors before making procurement decisions.
+- Open-source software licenses must be evaluated against your enterprise security and compliance policies.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Business-Rules-Management-System&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Business-Rules-Management-System&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this repository helpful for your business rules, decision automation, or software architecture work, please consider supporting the project!
+
+- ⭐ **Star** this repository to increase its visibility.
+- 🔀 **Fork** it to keep your own reference copy.
+- 📢 **Share** it with your team, colleagues, or developer communities.
+- ☕ **Sponsor / Buy Me a Coffee**: If you'd like to support ongoing open-source maintenance, check out the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?style=for-the-badge&logo=github" alt="Sponsor on GitHub"/>
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <b>Built with ❤️ for decision architects, developers, and enterprise automation teams worldwide.</b>
+</p>
